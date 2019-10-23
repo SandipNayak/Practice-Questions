@@ -1,3 +1,9 @@
+//Enter a 12 digit number add and the odd places and multiply it by 3, and add all the even places.
+//If the last digit of the result from step 2 is 0,then 0 is the check digit.Otherwise,substract the last
+//digit from 10 to calculate the check digit.
+//If the check digit matches the final digit of the 12-digit UPC , the UPC is assumed correct.
+//After computation,if the digits match,output the barcode with the message "validated".If not,output
+//the barcode with the message "error in barcode".
 #include"stdio.h"
 int b=12;
 int main()
@@ -59,7 +65,7 @@ int check_code(int arr2[], int q)
 		}
 		else
 		{
-			printf("erroe in barcode");
+			printf("error in barcode");
 		}
 	}
 	else

@@ -25,7 +25,7 @@ int main()
 int get_code(int arr[])
 {
 	int i;
-	printf("Your enter code is:-->");
+	printf("Your entered code is:-->");
 	for(i=0;i<b;i++)
 	{
 		printf("%d",arr[i]);

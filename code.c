@@ -26,7 +26,7 @@ int get_code(int arr[])
 {
 	int i;
 	printf("Your entered code is:-->");
-	for(i=0;i<b;i++)
+	for(i=b;i>=0;i--)
 	{
 		printf("%d",arr[i]);
 	}
@@ -39,7 +39,7 @@ int test_code(int arr1[])
 	for(i=0;i<b-1;i++)
 	{
 		flag++;
-		if(flag%2!=0)
+		if(flag%2>0)
 		{
 			sum1=sum1+arr1[i];
 		}
